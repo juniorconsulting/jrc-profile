@@ -1,4 +1,5 @@
 env/
+jrc_profile/settings/local.py
 
 *.pyc
 *.sqlite3
