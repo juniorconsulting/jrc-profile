@@ -1,6 +1,6 @@
 import os
 
-from jrc_auth.settings.base import BASE_DIR
+from jrc_example.settings.base import BASE_DIR
 
 
 # Database
