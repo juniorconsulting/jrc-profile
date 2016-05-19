@@ -20,7 +20,7 @@ class HasValidJrcAuthToken(BasePermission):
     Fall back to IsAdminUser when browsing the API.
     '''
     def has_permission(self, request, view):
-        if 'accept/json' in request.META['HTTP_ACCEPT']:
+        if 'application/json' in request.META['HTTP_ACCEPT']:
             assert 'HTTP_AUTH_TOKEN' in request.META.keys(), \
                 "Http-Auth-Token header not set"
             return check_token(request.META['HTTP_AUTH_TOKEN'])
