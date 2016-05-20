@@ -16,4 +16,4 @@ class Profile(models.Model):
     fun_fact = models.TextField(blank=True)
     active = models.BooleanField(blank=True)
     title = models.CharField(max_length=40, choices=TITLE_CHOICES, blank=True)
-    image = models.ImageField(upload_to='profile_pictures', blank=True)
+    image = models.ImageField(blank=True)
