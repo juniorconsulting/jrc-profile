@@ -3,3 +3,6 @@ jrc_profile/settings/local.py
 
 *.pyc
 *.sqlite3
+.idea/
+jrc_profile/.DS_Store
+logs/
