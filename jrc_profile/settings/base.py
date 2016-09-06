@@ -67,7 +67,8 @@ MIDDLEWARE_CLASSES = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': ('jrc_profile.permissions.HasValidJrcAuthToken',),
+    'DEFAULT_PERMISSION_CLASSES': ('jrc_profile.permissions.HasValidJrcAuthToken',
+                                   'rest_framework.permissions.AllowAny', ),
     'PAGE_SIZE': 10
 }
 
