@@ -13,5 +13,4 @@ logs/
 collected-static/
 logs/
 media/
-cache/
-
+.cache/
