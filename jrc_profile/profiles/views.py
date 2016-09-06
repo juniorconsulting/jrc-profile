@@ -6,18 +6,8 @@ from jrc_profile.profiles.serializers import ProfileSerializer
 from rest_framework import permissions
 
 
-@api_view(['GET'])
-@permission_classes((permissions.AllowAny, ))
-def profile_list_get(request):
-
-    if request.method == 'GET':
-        profiles = Profile.objects.all()
-        serializer = ProfileSerializer(profiles, many=True)
-        return Response(serializer.data)
-    return Response(status=status.HTTP_400_BAD_REQUEST)
-
-
 @api_view(['POST', 'GET'])
+@permission_classes((permissions.AllowAny, ))
 def profile_list(request):
 
     if request.method == "POST":
