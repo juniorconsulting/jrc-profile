@@ -11,7 +11,7 @@ from rest_framework import permissions
 def profile_list(request):
 
     if request.method == "POST":
-        serializer = ProfileSerializer(date=request.data)
+        serializer = ProfileSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
