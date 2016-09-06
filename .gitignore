@@ -6,3 +6,12 @@ jrc_profile/settings/local.py
 .idea/
 jrc_profile/.DS_Store
 logs/
+.bash_history
+.gitconfig
+.psql_history
+.viminfo
+collected-static/
+logs/
+media/
+cache/
+
